@@ -3,8 +3,16 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // Ensures correct path for Vercel
+  base: '/',
   build: {
-    outDir: 'dist', // Output directory for Vercel
+    outDir: 'dist',
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        // Add more entry points if needed for other pages
+        // dashboard: 'src/dashboard/Dashboard.jsx',
+        // products: 'src/products/Products.jsx'
+      }
+    }
   },
 });

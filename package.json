@@ -1,5 +1,5 @@
 {
-  "name": "frontend-ventas",
+  "name": "farmacia-frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "vercel-build": "vite build" // Added for Vercel
+    "vercel-build": "vite build"
   },
   "dependencies": {
     "axios": "^1.6.7",
